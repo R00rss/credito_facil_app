@@ -16,6 +16,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    transition: transform 500ms;
+}
+
+.aboutUs__img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .aboutUs__container .content {

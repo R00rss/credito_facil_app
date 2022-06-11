@@ -8,12 +8,14 @@
     position: sticky;
     top: 0;
     font-weight: 500;
+    z-index: 1;
 }
 
 .navbar__item {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0s background-color;
 }
 
 .navbar__item button {
@@ -28,6 +30,9 @@
 
 .navbar__item button:hover {
     cursor: pointer;
+    background-color: #ffffff;
+    color: var(--important-color);
+    transition-delay:3ms;
 }
 
 .aboutUs__item {

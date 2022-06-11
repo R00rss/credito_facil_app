@@ -24,6 +24,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    transition: transform 500ms;
+}
+
+.contact__img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .contact__container .content>.title {
@@ -33,14 +39,18 @@
     align-items: center;
     height: 30%;
     color: var(--important-color);
+    font-size: 1.9vw;
 }
-.contact__container .content >.body{
+
+.contact__container .content>.body {
+    font-size: 1.6vw;
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.contact__container .content >.body>article {
+
+.contact__container .content>.body>article {
     color: var(--p-color);
     display: flex;
 
@@ -53,4 +63,9 @@
 .contact__container .content>.body>article>p>a>img {
     height: 20px;
     aspect-ratio: 1/1;
+    transition: transform 500ms;
+}
+
+.contact__container .content>.body>article>p>a>img:hover {
+    transform: scale(1.3)
 }
