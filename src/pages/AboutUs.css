@@ -1,0 +1,42 @@
+.aboutUs__container {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+    padding: 0 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUs__img {
+    border-radius: 5px;
+    grid-column: 1/4;
+    height: 80vh;
+    background-image: url("../media/images/aboutUs/reunion.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.aboutUs__container .content {
+    height: 80vh;
+    border-radius: 5px;
+    grid-column: 4/6;
+    border: solid 2px rgba(255, 59, 59, 0.255);
+    justify-self: center;
+    align-self: center;
+    padding: 0 1rem;
+}
+
+.aboutUs__container .content>.title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    color: var(--important-color);
+}
+
+.aboutUs__container .content>p {
+    color: var(--p-color);
+}

@@ -1,0 +1,56 @@
+.contact__container {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+    padding: 0 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__container .content {
+    height: 80vh;
+    border-radius: 5px;
+    grid-column: 1/3;
+    border: solid 2px rgba(255, 59, 59, 0.255);
+    padding: 0 1rem;
+}
+
+.contact__img {
+    border-radius: 5px;
+    grid-column: 3/6;
+    height: 80vh;
+    background-image: url("../media/images/contact/reunion2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact__container .content>.title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    color: var(--important-color);
+}
+.contact__container .content >.body{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contact__container .content >.body>article {
+    color: var(--p-color);
+    display: flex;
+
+}
+
+.contact__container .content>.body>article>p>strong {
+    color: var(--important-color);
+}
+
+.contact__container .content>.body>article>p>a>img {
+    height: 20px;
+    aspect-ratio: 1/1;
+}
